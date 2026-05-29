@@ -266,25 +266,8 @@ This project is for educational purposes only. All phishing samples are from pub
 
 ## Acknowledgments
 
-- Future Interns for the opportunity and guidance
 - OWASP for security education resources
 - Public phishing research repositories
 - Security community for threat intelligence
 
 ---
-
-### If you found this helpful, please star this repository!
-
-**Note:** This project demonstrates security awareness capabilities. The analyzed emails are for educational purposes only. Always verify suspicious emails through official channels.
-
----
-
-## Questions or Feedback?
-
-Feel free to reach out or open an issue if you have questions about the analysis methodology or phishing detection techniques.
-
----
-
-*Last Updated: February 10, 2026*
-
-**Remember: When in doubt, don't click it out!**
