@@ -340,6 +340,141 @@ document.addEventListener("DOMContentLoaded", () => {
                 { top: 22, left: 34, title: "Payroll Lock Threat", threat: "Financial Urgency", risk: "HIGH", desc: "Threatening to lock payroll outgoing wire lines creates absolute panic for the accountant, forcing immediate compliance.", mitigation: "Corporate banking relationships have direct support representatives. Verify alerts through them via verified phone numbers." },
                 { top: 31, left: 50, title: "Bank Account Credential Harvesting Portal", threat: "Credential Harvesting", risk: "CRITICAL", desc: "The link directs to a cloned business banking portal aimed at capturing commercial login IDs, PINs, and security answers.", mitigation: "Verify absolute domain addresses in browser frames before entering commercial bank keys." }
             ]
+        },
+        {
+            id: 10,
+            avatar: "S",
+            senderName: "DocuSign Signature Service",
+            senderEmail: "signature-desk@docusign-verification.net",
+            time: "10:05 PM",
+            risk: "high",
+            subject: "Urgent: Signature Required - Mutual NDA and Retention Agreement",
+            snippet: "You have been requested to review and sign the document 'NDA_and_Retention_Agreement.pdf' inside DocuSign...",
+            htmlBody: `
+                <div style="font-family: Arial, sans-serif; color: #333333; line-height: 1.5; padding: 20px; border: 1px solid #e5e7eb; max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+                    <div style="background-color: #1e293b; padding: 15px; text-align: center; color: #fbbf24; font-weight: bold; font-size: 20px;">
+                        DocuSign
+                    </div>
+                    <div style="padding: 25px;">
+                        <p>Dear Candidate,</p>
+                        <p>You have been requested by corporate counsel to review and sign the legal document <strong>"Mutual NDA and Retention Agreement.pdf"</strong> via our secure signature workspace.</p>
+                        <p>This document contains sensitive details regarding pending workforce structures and retention incentives. To complete the process and keep your onboarding sequence active, you must click the link below and sign the document today.</p>
+                        <div style="text-align: center; margin: 25px 0;">
+                            <a href="#" style="display: inline-block; padding: 12px 24px; background-color: #fbbf24; color: #1e293b !important; text-decoration: none; font-weight: bold; border-radius: 4px;">Review & Sign Document</a>
+                        </div>
+                        <p>Please note that this document signature request will expire within <strong>12 hours</strong>.</p>
+                        <p>Best regards,<br>DocuSign Administrative Service</p>
+                    </div>
+                </div>
+            `,
+            auth: { spf: "PASS", dkim: "PASS", dmarc: "PASS", dmarcVal: "PASS (p=QUARANTINE)" },
+            flags: [
+                { top: 5, left: 52, title: "DocuSign Lookalike Domain", threat: "Brand Typosquatting", risk: "CRITICAL", desc: "The domain 'docusign-verification.net' mimics authentic DocuSign infrastructure. Real DocuSign notifications resolve under 'docusign.com' or 'docusign.net'.", mitigation: "Never log in or sign documents accessed via external domain extensions." },
+                { top: 22, left: 34, title: "NDA Urgency Pressure", threat: "Social Engineering", risk: "HIGH", desc: "Using the theme of an urgent NDA and workforce retention incentive exploits employee curiosity and fear under a strict 12-hour limit.", mitigation: "Check with internal legal departments verbally to verify signature requests." },
+                { top: 31, left: 50, title: "SSO Credential Harvesting Portal", threat: "Form Exploitation", risk: "CRITICAL", desc: "The sign link loads a spoofed portal capturing email and corporate password credentials.", mitigation: "Check browser address frames for the official secure signature login domains." }
+            ]
+        },
+        {
+            id: 11,
+            avatar: "Z",
+            senderName: "Zoom Meeting Alerter",
+            senderEmail: "no-reply@zoom-briefing-alert.us",
+            time: "10:42 PM",
+            risk: "high",
+            subject: "Action Required: Mandatory Q2 Corporate Reorganization Briefing - Zoom Link",
+            snippet: "A mandatory all-hands corporate restructuring briefing has been scheduled for tomorrow at 9:00 AM. Please download...",
+            htmlBody: `
+                <div style="font-family: Arial, sans-serif; color: #333333; line-height: 1.5; padding: 20px; border: 1px solid #cbd5e1; max-width: 600px; margin: 0 auto; background-color: #f8fafc;">
+                    <div style="background-color: #2d8cff; padding: 15px; text-align: center; color: white; font-weight: bold; font-size: 24px;">
+                        zoom
+                    </div>
+                    <div style="padding: 25px; background-color: #ffffff;">
+                        <h3 style="color: #2d8cff; margin-top: 0;">Restructuring Briefing - All Hands</h3>
+                        <p>Dear Employee,</p>
+                        <p>A mandatory Zoom video conference has been scheduled for tomorrow morning regarding the upcoming Q2 corporate restructuring program and team reassignments.</p>
+                        <p>To access the call securely and review details of the transition catalog, you must download the customized secure connection utility attached below.</p>
+                        <div style="background-color: #f1f5f9; padding: 12px; border-radius: 4px; margin: 15px 0; border: 1px solid #cbd5e1; font-family: monospace; font-size: 13px;">
+                            <strong>Attachment:</strong> Zoom_Briefing_Workspace_Update.zip (142.1 KB)
+                        </div>
+                        <p>Ensure the connector utility is unzipped and run prior to the 9:00 AM call time to avoid account lockout during the meeting.</p>
+                        <p>Regards,<br>Zoom Communications Administration Office</p>
+                    </div>
+                </div>
+            `,
+            auth: { spf: "PASS", dkim: "PASS", dmarc: "FAIL", dmarcVal: "FAIL (p=NONE)" },
+            flags: [
+                { top: 5, left: 52, title: "Lookalike Zoom Domain", threat: "Typosquatting", risk: "HIGH", desc: "The sender domain 'zoom-briefing-alert.us' mimics official Zoom channels. Authentic Zoom communications resolve strictly under 'zoom.us' or 'zoom.com'.", mitigation: "Never download connection packages or update files from unauthorized external email channels." },
+                { top: 22, left: 34, title: "Workforce Transition Bait", threat: "Fear Injection", risk: "CRITICAL", desc: "The threat of corporate restructuring and team reassignments plays on employee career anxieties, bypassing logical defenses.", mitigation: "Official HR restructuring notices arrive via standard internal announcements, never requiring custom ZIP update tools." },
+                { top: 29, left: 40, title: "Malicious Archive Attachment", threat: "Trojan Downloader", risk: "CRITICAL", desc: "The attachment 'Zoom_Briefing_Workspace_Update.zip' contains a malicious script payload designed to infect endpoints.", mitigation: "Never extract or execute installer archives received from outside sources." }
+            ]
+        },
+        {
+            id: 12,
+            avatar: "T",
+            senderName: "Microsoft Teams System Alert",
+            senderEmail: "teams-chat-alert@microsoft-teams-corporate.com",
+            time: "11:15 PM",
+            risk: "high",
+            subject: "System Notification: Direct mention in Target Corp HR-Private channel",
+            snippet: "You have a direct mention from HR Administration in the chat thread regarding the pending Q2 workforce transition...",
+            htmlBody: `
+                <div style="font-family: 'Segoe UI', Tahoma, sans-serif; color: #333333; line-height: 1.5; padding: 20px; border: 1px solid #e0e0e0; max-width: 580px; margin: 0 auto; background-color: #f3f2f1;">
+                    <div style="background-color: #6264a7; color: white; padding: 15px; font-weight: bold; font-size: 16px;">
+                        Microsoft Teams
+                    </div>
+                    <div style="padding: 25px; background-color: #ffffff;">
+                        <p style="color: #6264a7; font-weight: bold; margin-top: 0;">HR Admin mentioned you in 'Workforce Audit List'</p>
+                        <p>Dear Employee,</p>
+                        <p>You have been tagged in a private HR thread regarding the upcoming payroll ledger and transition updates. Please review the chat snippet below:</p>
+                        <div style="background-color: #f3f2f1; padding: 12px; margin: 15px 0; border-left: 4px solid #6264a7; font-style: italic;">
+                            "Please check the spreadsheet linked below. We need to verify these compensation adjusters before Ledger 3 lock."
+                        </div>
+                        <div style="text-align: center; margin: 25px 0;">
+                            <a href="#" style="display: inline-block; padding: 12px 24px; background-color: #6264a7; color: #ffffff !important; text-decoration: none; font-weight: bold; border-radius: 4px;">Reply in Teams</a>
+                        </div>
+                    </div>
+                </div>
+            `,
+            auth: { spf: "PASS", dkim: "PASS", dmarc: "PASS", dmarcVal: "PASS (p=REJECT)" },
+            flags: [
+                { top: 5, left: 52, title: "Spoofed Teams Chat Server", threat: "Typosquatting", risk: "CRITICAL", desc: "The domain 'microsoft-teams-corporate.com' is registered externally to spoof teams notifications. Authentic notifications resolve under Microsoft systems.", mitigation: "Access Microsoft Teams directly through your local OS app interface rather than email prompts." },
+                { top: 22, left: 34, title: "HR Private Mention Bait", threat: "Social Engineering", risk: "HIGH", desc: "Mentioning HR private boards and payroll ledger changes baits employee curiosity and career concerns to execute immediate logins.", mitigation: "Verify private mention tags directly inside the native Teams application sidebar." },
+                { top: 31, left: 50, title: "SSO Credential Harvesting Kit", threat: "Form Exploits", risk: "CRITICAL", desc: "The 'Reply in Teams' button directs to a replica SSO portal designed to harvest Active Directory logins.", mitigation: "Verify browser URL parameters strictly say login.microsoftonline.com prior to typing corporate credentials." }
+            ]
+        },
+        {
+            id: 13,
+            avatar: "G",
+            senderName: "Google Docs (via Drive)",
+            senderEmail: "comments-noreply@googledocs-security-collaboration.com",
+            time: "11:50 PM",
+            risk: "high",
+            subject: "Document Shared: \"Salary_Review_and_Bonus_Q2_TargetCorp\" - Comment tagged you",
+            snippet: "User shared a Google Doc with you and tagged you in a comment regarding your Q2 performance bonus adjustments...",
+            htmlBody: `
+                <div style="font-family: Arial, sans-serif; color: #333333; line-height: 1.5; padding: 20px; border: 1px solid #e1e8ed; max-width: 580px; margin: 0 auto; background-color: #ffffff;">
+                    <div style="background-color: #f8fafc; border-bottom: 1px solid #e1e8ed; padding: 15px; font-weight: bold; color: #4b5563;">
+                        Google Drive
+                    </div>
+                    <div style="padding: 25px;">
+                        <p>Hello,</p>
+                        <p>An external billing collaborator has shared a Google Doc with you and tagged your email in a document comment thread.</p>
+                        <div style="margin: 20px 0; background-color: #f1f5f9; padding: 15px; border-radius: 6px; border-left: 4px solid #10b981;">
+                            <p style="margin: 0; font-weight: bold; color: #1f2937;">Salary_Review_and_Bonus_Q2_TargetCorp.gdoc</p>
+                            <p style="margin: 10px 0 0 0; font-style: italic; color: #4b5563;">"Please verify your performance bonus percentage in line 24 before final release tomorrow morning."</p>
+                        </div>
+                        <div style="text-align: center; margin: 25px 0;">
+                            <a href="#" style="display: inline-block; padding: 12px 24px; background-color: #10b981; color: #ffffff !important; text-decoration: none; font-weight: bold; border-radius: 4px;">Open in Docs</a>
+                        </div>
+                    </div>
+                </div>
+            `,
+            auth: { spf: "PASS", dkim: "PASS", dmarc: "PASS", dmarcVal: "PASS (p=QUARANTINE)" },
+            flags: [
+                { top: 5, left: 52, title: "Spoofed Google Drive Address", threat: "Typosquatting", risk: "CRITICAL", desc: "The domain 'googledocs-security-collaboration.com' mimics official Google comment systems. Authentic Google Drive comment alerts arrive from '@google.com'.", mitigation: "Check your shared document queue inside your corporate Google Drive app manually." },
+                { top: 22, left: 34, title: "Compensation Bonus Bait", threat: "Greed Trigger", risk: "HIGH", desc: "Reviewing a compensation bonus adjustment triggers positive greed emotion, lowering standard security defenses and pushing the employee to click.", mitigation: "HR departments do not verify salary metrics using comment tags in unauthenticated public document shares." },
+                { top: 31, left: 50, title: "Credential Harvesting Dashboard", threat: "Form Capture", risk: "CRITICAL", desc: "The 'Open in Docs' button leads to a lookalike SSO page designed to harvest your organizational login username and password.", mitigation: "Check URL parameters in browser bars prior to entering any corporate password." }
+            ]
         }
     ];
 
@@ -519,6 +654,74 @@ To: "Recipient" &lt;employee@target-corp.com&gt;
 Subject: Security Restriction: Suspicious login blocked - Identity verification
 Date: Tue, 10 Feb 2026 21:24:00 +0000
 <span class="header-clickable" data-field="msgid">Message-ID: &lt;CHASE-RESTRICT-99420@chase-verification-service.com&gt;</span>
+MIME-Version: 1.0`,
+
+        `Return-Path: <signature-desk@docusign-verification.net>
+Received: from mail.docusign-verification.net (mail.docusign-verification.net [198.51.100.220])
+        by mx.corporate-mail-gateway.com with ESMTPS id d12si948291plh.42.2026.02.10.14.05.18
+        for <employee@target-corp.com>;
+        Tue, 10 Feb 2026 14:05:20 -0800 (PST)
+<span class="header-clickable" data-field="spf">Received-SPF: pass</span> (mx.corporate-mail-gateway.com: domain of signature-desk@docusign-verification.net designates 198.51.100.220 as permitted sender) client-ip=198.51.100.220;
+<span class="header-clickable" data-field="auth">Authentication-Results: mx.corporate-mail-gateway.com;</span>
+       spf=pass (sender IP is 198.51.100.220) smtp.mailfrom=signature-desk@docusign-verification.net;
+       dkim=pass header.i=@docusign-verification.net header.s=default;
+       dmarc=pass (p=QUARANTINE sp=NONE dis=NONE) header.from=docusign-verification.net
+<span class="header-clickable" data-field="from">From: "DocuSign Signature Service" &lt;signature-desk@docusign-verification.net&gt;</span>
+To: "Candidate" &lt;employee@target-corp.com&gt;
+Subject: Urgent: Signature Required - Mutual NDA and Retention Agreement
+Date: Tue, 10 Feb 2026 22:05:15 +0000
+<span class="header-clickable" data-field="msgid">Message-ID: &lt;DOCUSIGN-SIGN-93820-2026@docusign-verification.net&gt;</span>
+MIME-Version: 1.0`,
+
+        `Return-Path: <no-reply@zoom-briefing-alert.us>
+Received: from mail.zoom-briefing-alert.us (mail.zoom-briefing-alert.us [203.0.113.42])
+        by mx.corporate-mail-gateway.com with ESMTPS id z42si854932pld.12.2026.02.10.14.42.12
+        for &lt;employee@target-corp.com&gt;;
+        Tue, 10 Feb 2026 14:42:15 -0800 (PST)
+<span class="header-clickable" data-field="spf">Received-SPF: pass</span> (mx.corporate-mail-gateway.com: domain of no-reply@zoom-briefing-alert.us designates 203.0.113.42 as permitted sender) client-ip=203.0.113.42;
+<span class="header-clickable" data-field="auth">Authentication-Results: mx.corporate-mail-gateway.com;</span>
+       spf=pass (sender IP is 203.0.113.42) smtp.mailfrom=no-reply@zoom-briefing-alert.us;
+       dkim=pass header.i=@zoom-briefing-alert.us header.s=default;
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=zoom-briefing-alert.us
+<span class="header-clickable" data-field="from">From: "Zoom Meeting Alerter" &lt;no-reply@zoom-briefing-alert.us&gt;</span>
+To: "Employee" &lt;employee@target-corp.com&gt;
+Subject: Action Required: Mandatory Q2 Corporate Reorganization Briefing - Zoom Link
+Date: Tue, 10 Feb 2026 22:42:10 +0000
+<span class="header-clickable" data-field="msgid">Message-ID: &lt;ZOOM-BRIEFING-93821-2026@zoom-briefing-alert.us&gt;</span>
+MIME-Version: 1.0`,
+
+        `Return-Path: <teams-chat-alert@microsoft-teams-corporate.com>
+Received: from mail.microsoft-teams-corporate.com (mail.microsoft-teams-corporate.com [192.0.2.145])
+        by mx.corporate-mail-gateway.com with ESMTPS id t15si942918plh.10.2026.02.10.15.15.22
+        for <employee@target-corp.com>;
+        Tue, 10 Feb 2026 15:15:24 -0800 (PST)
+<span class="header-clickable" data-field="spf">Received-SPF: pass</span> (mx.corporate-mail-gateway.com: domain of teams-chat-alert@microsoft-teams-corporate.com designates 192.0.2.145 as permitted sender) client-ip=192.0.2.145;
+<span class="header-clickable" data-field="auth">Authentication-Results: mx.corporate-mail-gateway.com;</span>
+       spf=pass (sender IP is 192.0.2.145) smtp.mailfrom=teams-chat-alert@microsoft-teams-corporate.com;
+       dkim=pass header.i=@microsoft-teams-corporate.com header.s=default;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=microsoft-teams-corporate.com
+<span class="header-clickable" data-field="from">From: "Microsoft Teams System Alert" &lt;teams-chat-alert@microsoft-teams-corporate.com&gt;</span>
+To: "Target Corp Employee" &lt;employee@target-corp.com&gt;
+Subject: System Notification: Direct mention in Target Corp HR-Private channel
+Date: Tue, 10 Feb 2026 23:15:20 +0000
+<span class="header-clickable" data-field="msgid">Message-ID: &lt;TEAMS-MENTION-93822-2026@microsoft-teams-corporate.com&gt;</span>
+MIME-Version: 1.0`,
+
+        `Return-Path: <comments-noreply@googledocs-security-collaboration.com>
+Received: from mail.googledocs-security-collaboration.com (mail.googledocs-security-collaboration.com [198.51.100.245])
+        by mx.corporate-mail-gateway.com with ESMTPS id g12si948291plk.84.2026.02.10.15.50.05
+        for <employee@target-corp.com>;
+        Tue, 10 Feb 2026 15:50:07 -0800 (PST)
+<span class="header-clickable" data-field="spf">Received-SPF: pass</span> (mx.corporate-mail-gateway.com: domain of comments-noreply@googledocs-security-collaboration.com designates 198.51.100.245 as permitted sender) client-ip=198.51.100.245;
+<span class="header-clickable" data-field="auth">Authentication-Results: mx.corporate-mail-gateway.com;</span>
+       spf=pass (sender IP is 198.51.100.245) smtp.mailfrom=comments-noreply@googledocs-security-collaboration.com;
+       dkim=pass header.i=@googledocs-security-collaboration.com header.s=default;
+       dmarc=pass (p=QUARANTINE sp=NONE dis=NONE) header.from=googledocs-security-collaboration.com
+<span class="header-clickable" data-field="from">From: "Google Docs (via Drive)" &lt;comments-noreply@googledocs-security-collaboration.com&gt;</span>
+To: "Recipient" &lt;employee@target-corp.com&gt;
+Subject: Document Shared: "Salary_Review_and_Bonus_Q2_TargetCorp" - Comment tagged you
+Date: Tue, 10 Feb 2026 23:50:00 +0000
+<span class="header-clickable" data-field="msgid">Message-ID: &lt;GDRIVE-SHARE-99421@googledocs-security-collaboration.com&gt;</span>
 MIME-Version: 1.0`
     ];
 
