@@ -33,23 +33,32 @@ Create a practical security awareness training document that helps employees:
 
 ## Project Summary
 
-### Phishing Emails Analyzed: 5
+### Phishing Emails Analyzed: 14
 
 | Email Type | Risk Level | Attack Goal |
 |-----------|------------|-------------|
-| Account Suspension Scam | HIGH | Credential theft |
-| Prize/Lottery Fraud | HIGH | Identity theft + malware |
-| CEO Fraud (BEC) | CRITICAL | Wire transfer ($45K) |
-| IT Support Phishing | MEDIUM-HIGH | Credential harvesting |
-| Package Delivery Scam | MEDIUM | Personal info + malware |
+| 01: Account Suspension (PayPal Theme) | HIGH | Credential theft |
+| 02: Prize / Lottery Windfall | HIGH | Identity theft + malware |
+| 03: CEO Fraud (BEC Wire Transfer) | CRITICAL | Wire transfer ($45K) |
+| 04: IT Password Expiration | MEDIUM-HIGH | Credential harvesting |
+| 05: Package Reschedule (DHL Theme) | MEDIUM | Personal info + malware |
+| 06: Document Mention (SharePoint Theme) | HIGH | Document access / Credential theft |
+| 07: Benefits Expiration (HR Theme) | HIGH | PII theft / SSN harvest |
+| 08: Overdue Invoice (Global Parts AP) | CRITICAL | Financial wire fraud / Malware |
+| 09: Breach Incident Warning (Security Simulation) | CRITICAL | Emergency SSO credential harvesting |
+| 10: Security Restrict Alert (Chase Banking) | HIGH | Corporate banking credential theft |
+| 11: Signature Request (DocuSign Theme) | HIGH | Legal NDA credential harvesting |
+| 12: Restructuring Briefing (Zoom Theme) | CRITICAL | Corporate anxiety / Trojan malware |
+| 13: Private Channel Tag (Teams Theme) | HIGH | HR workplace transitions / SSO harvest |
+| 14: Compensation Bonus Adjustment (Google Drive) | HIGH | Financial greed / credential theft |
 
 ### Key Findings
 
 ```
-Red Flags Identified: 40+
-Risk Levels: 3 HIGH, 2 MEDIUM
-Attack Types: Credential theft, BEC, malware, identity theft
-Prevention Methods: 20+ actionable tips documented
+Red Flags Identified: 120+
+Risk Levels: 5 CRITICAL, 8 HIGH, 1 MEDIUM
+Attack Types: Credential theft, BEC, malware, identity theft, financial fraud
+Prevention Methods: 30+ actionable tips documented
 ```
 
 ## Repository Structure
