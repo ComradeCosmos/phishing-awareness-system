@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Detection & Security Awareness System</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background grid decoration -->
+    <div class="grid-background"></div>
+
+    <header class="app-header">
+        <div class="header-logo">
+            <!-- Sleek SVG Shield Logo -->
+            <svg class="logo-shield-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <div class="logo-text">
+                <h1>PHISHING SHIELD</h1>
+                <span class="subtitle">SECURITY TRIAGE & AWARENESS INFRASTRUCTURE</span>
+            </div>
+        </div>
+        <div class="system-status">
+            <span class="status-indicator live"></span>
+            <span class="status-text">SIMULATION ACTIVE</span>
+        </div>
+    </header>
+
+    <main class="app-container">
+        <!-- Navigation Sidebar -->
+        <aside class="app-sidebar">
+            <nav class="nav-menu">
+                <button class="nav-btn active" data-tab="inbox">
+                    <span class="nav-label">INBOX SIMULATOR</span>
+                </button>
+                <button class="nav-btn" data-tab="header">
+                    <span class="nav-label">HEADER INSPECTOR</span>
+                </button>
+                <button class="nav-btn" data-tab="domain">
+                    <span class="nav-label">DOMAIN ANALYZER</span>
+                </button>
+                <button class="nav-btn" data-tab="quiz">
+                    <span class="nav-label">AWARENESS QUIZ</span>
+                </button>
+                <button class="nav-btn" data-tab="reference">
+                    <span class="nav-label">REFERENCE CENTER</span>
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>Task 2: Phishing Detection & Employee Education</p>
+                <span class="version-tag">RELEASE 2026.1.0</span>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <section class="content-viewport">
+            
+            <!-- TAB 1: INBOX SIMULATOR -->
+            <div class="tab-panel active" id="tab-inbox">
+                <div class="panel-header">
+                    <div class="header-titles">
+                        <h2>Email Sandbox Simulator</h2>
+                        <p class="panel-subtitle">Analyze inbound message elements in a secure, sandboxed container</p>
+                    </div>
+                    <div class="toggle-control">
+                        <span class="toggle-label">Reveal Red Flags</span>
+                        <label class="switch">
+                            <input type="checkbox" id="reveal-flags-btn">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="inbox-layout">
+                    <!-- Left: Inbox List -->
+                    <div class="inbox-list" id="inbox-email-list">
+                        <!-- Populated by JavaScript -->
+                    </div>
+
+                    <!-- Right: Reading Pane -->
+                    <div class="reading-pane">
+                        <div class="email-details-header">
+                            <div class="sender-info">
+                                <div class="sender-avatar" id="email-sender-avatar">SYS</div>
+                                <div class="sender-meta">
+                                    <div class="subject-line" id="email-subject">Select an email to begin analysis</div>
+                                    <div class="sender-address-row">
+                                        <span class="from-label">From:</span>
+                                        <span class="sender-name" id="email-sender-name">System</span>
+                                        <span class="sender-email" id="email-sender-email">&lt;&gt;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="email-time" id="email-time">-</div>
+                        </div>
+
+                        <div class="email-sandbox-body" id="email-content-body">
+                            <!-- Populated by JavaScript -->
+                            <div class="empty-state">
+                                <h3>Select a suspicious email from the inbox list to start investigating its indicators.</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Side Indicator/Explain Card -->
+                    <div class="flag-details-card" id="flag-details-sidebar">
+                        <div class="card-header">
+                            <span class="shield-badge">INDICATOR TRIAGED</span>
+                            <button class="close-sidebar-btn" id="close-flag-card">×</button>
+                        </div>
+                        <h4 id="flag-title">Select a red flag marker</h4>
+                        <div class="flag-tags">
+                            <span class="flag-tag tag-threat" id="flag-threat-tag">BEC</span>
+                            <span class="flag-tag tag-risk" id="flag-risk-tag">Risk: CRITICAL</span>
+                        </div>
+                        <p class="flag-description" id="flag-desc">
+                            When "Reveal Red Flags" is toggled, target markers will appear on the email. Click them to audit their technical and psychological manipulation tactics.
+                        </p>
+                        <div class="mitigation-box">
+                            <h5>Mitigation Standard:</h5>
+                            <p id="flag-mitigation">Always confirm requests using external channels.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 2: HEADER ANALYZER -->
+            <div class="tab-panel" id="tab-header">
+                <div class="panel-header-simple">
+                    <h2>Technical SMTP Header Inspector</h2>
+                    <p>Select an email to view and interactively deconstruct its SMTP routing headers.</p>
+                </div>
+                
+                <div class="header-analyzer-layout">
+                    <!-- Left: Header Selector & Log View -->
+                    <div class="header-log-view">
+                        <div class="selector-bar">
+                            <label for="header-email-select">Choose Email Target:</label>
+                            <select id="header-email-select" class="premium-select">
+                                <option value="0">01: Account Suspension (PayPal Theme)</option>
+                                <option value="1">02: Prize / Lottery Windfall</option>
+                                <option value="2">03: CEO Fraud (BEC Wire Transfer)</option>
+                                <option value="3">04: IT Password Expiration</option>
+                                <option value="4">05: Package Reschedule (DHL Theme)</option>
+                                <option value="5">06: Document Mention (SharePoint Theme)</option>
+                                <option value="6">07: Benefits Expiration (HR Theme)</option>
+                                <option value="7">08: Overdue Invoice (Global Parts AP)</option>
+                                <option value="8">09: Breach Incident Warning (Security Simulation)</option>
+                                <option value="9">10: Security Restrict Alert (Chase Banking)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="header-terminal">
+                            <div class="terminal-header">
+                                <span class="term-dot"></span>
+                                <span class="term-dot"></span>
+                                <span class="term-dot"></span>
+                                <span class="term-title">SMTP_HEADERS_TRIAGE.LOG</span>
+                            </div>
+                            <pre class="terminal-body" id="header-code-block">
+                                <!-- Populated dynamically by JavaScript -->
+                            </pre>
+                        </div>
+                    </div>
+
+                    <!-- Right: Header Insights Deck -->
+                    <div class="header-insights-panel">
+                        <h3>Interactive Header Glossary</h3>
+                        <p class="insight-tip">Click highlighted text in the terminal block to inspect the security implications of specific headers.</p>
+                        
+                        <div class="auth-status-cards">
+                            <div class="auth-card" id="card-spf">
+                                <div class="card-status-dot"></div>
+                                <h4>SPF Status</h4>
+                                <p id="spf-value">CHECKING</p>
+                            </div>
+                            <div class="auth-card" id="card-dkim">
+                                <div class="card-status-dot"></div>
+                                <h4>DKIM Status</h4>
+                                <p id="dkim-value">CHECKING</p>
+                            </div>
+                            <div class="auth-card" id="card-dmarc">
+                                <div class="card-status-dot"></div>
+                                <h4>DMARC Policy</h4>
+                                <p id="dmarc-value">CHECKING</p>
+                            </div>
+                        </div>
+
+                        <div class="inspector-card" id="header-details-card">
+                            <h4 id="header-term-name">Selected Field: Message-ID</h4>
+                            <p id="header-term-def">Click on a highlighted header field in the log output on the left to show its definition, security value, and how attackers abuse it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 3: DOMAIN ANALYZER -->
+            <div class="tab-panel" id="tab-domain">
+                <div class="panel-header-simple">
+                    <h2>Typosquatting & Lookalike Domain Inspector</h2>
+                    <p>Enter a domain name to execute an interactive audit checking for homoglyphs, sub-domain hijacking, and spoofing indicators.</p>
+                </div>
+
+                <div class="domain-checker-layout">
+                    <div class="checker-input-section card">
+                        <h3>Analyze Inbound Domain</h3>
+                        <p class="section-desc">Type the sender domain (e.g., paypa1-support.com, google.com) below to test its technical risk level.</p>
+                        
+                        <div class="input-group">
+                            <input type="text" id="domain-input" placeholder="e.g. brand-support1.net" class="premium-input">
+                            <button id="domain-analyze-btn" class="premium-btn">Scan Infrastructure</button>
+                        </div>
+
+                        <div class="quick-examples">
+                            <span>Test Examples:</span>
+                            <button class="example-chip" data-domain="paypa1-support.com">paypa1-support.com</button>
+                            <button class="example-chip" data-domain="targetcorp-it-support.net">targetcorp-it-support.net</button>
+                            <button class="example-chip" data-domain="paypal.secure-login.com">paypal.secure-login.com</button>
+                            <button class="example-chip" data-domain="microsoft.com">microsoft.com</button>
+                        </div>
+                    </div>
+
+                    <!-- Domain Report Card -->
+                    <div class="domain-report-section card hidden" id="domain-report-card">
+                        <div class="report-header">
+                            <div class="score-container">
+                                <svg class="score-circle-svg" viewBox="0 0 36 36">
+                                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle-fill" id="score-circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                </svg>
+                                <div class="score-text">
+                                    <span id="score-num">0%</span>
+                                    <span class="score-lbl">Risk</span>
+                                </div>
+                            </div>
+                            <div class="report-identity">
+                                <h3 id="report-domain-name">domain.com</h3>
+                                <span class="risk-badge" id="report-risk-badge">SAFE</span>
+                            </div>
+                        </div>
+
+                        <div class="audit-details">
+                            <h4>Audited Security Indicators</h4>
+                            <ul class="indicators-list" id="report-indicators-list">
+                                <!-- Populated dynamically by JavaScript -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 4: AWARENESS QUIZ -->
+            <div class="tab-panel" id="tab-quiz">
+                <div class="quiz-container" id="quiz-intro">
+                    <div class="quiz-badge">CHALLENGE ACTIVE</div>
+                    <h2>Phishing Awareness Training Assessment</h2>
+                    <p>Test your knowledge on spotting advanced phishing attacks, identifying email header manipulation, and implementing security best practices.</p>
+                    
+                    <div class="quiz-stats-grid">
+                        <div class="quiz-stat-card">
+                            <span class="stat-num">5</span>
+                            <span class="stat-lbl">Real-World Scenarios</span>
+                        </div>
+                        <div class="quiz-stat-card">
+                            <span class="stat-num">80%</span>
+                            <span class="stat-lbl">Passing Threshold</span>
+                        </div>
+                        <div class="quiz-stat-card">
+                            <span class="stat-num">CERT</span>
+                            <span class="stat-lbl">Graduation Status</span>
+                        </div>
+                    </div>
+
+                    <button class="premium-btn btn-lg" id="start-quiz-btn">Begin Security Training</button>
+                </div>
+
+                <div class="quiz-container card hidden" id="quiz-gameplay">
+                    <div class="quiz-progress-bar">
+                        <div class="quiz-progress-fill" id="quiz-progress"></div>
+                    </div>
+                    <div class="quiz-header-meta">
+                        <span class="q-index" id="quiz-q-index">Scenario 1 of 5</span>
+                        <span class="q-score" id="quiz-live-score">Triage Score: 0/0</span>
+                    </div>
+
+                    <h3 class="quiz-question" id="quiz-question-text">Scenario loading</h3>
+
+                    <div class="quiz-options-list" id="quiz-options-container">
+                        <!-- Populated dynamically by JavaScript -->
+                    </div>
+
+                    <div class="quiz-feedback-box hidden" id="quiz-explanation-box">
+                        <div class="feedback-title">
+                            <span class="feedback-status-text" id="feedback-status-text">Status</span>
+                        </div>
+                        <p class="feedback-desc" id="quiz-explanation-text">Explanation goes here.</p>
+                        <button class="premium-btn" id="next-question-btn">Next Scenario</button>
+                    </div>
+                </div>
+
+                <!-- Quiz Results screen -->
+                <div class="quiz-container card hidden" id="quiz-results">
+                    <div class="certificate-frame" id="cert-card">
+                        <div class="cert-header">
+                            <h3>CERTIFICATE OF COMPLETION</h3>
+                            <p>Phishing Awareness & Incident Triage Training</p>
+                        </div>
+                        <div class="cert-body">
+                            <p>This certifies that the candidate has successfully finished the professional-grade security assessment on identifying, deconstructing, and mitigating phishing attempts.</p>
+                            <div class="cert-score-display">
+                                <span class="cert-score-num" id="cert-score-text">5 / 5</span>
+                                <span class="cert-score-status" id="cert-status-lbl">Grade: Perfect Pass</span>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <span class="cert-date">Date: February 10, 2026</span>
+                            <span class="cert-sig">Authorized Signature: Future Interns Security</span>
+                        </div>
+                    </div>
+
+                    <button class="premium-btn btn-lg" id="restart-quiz-btn">Retake Assessment</button>
+                </div>
+            </div>
+
+            <!-- TAB 5: REFERENCE CENTER -->
+            <div class="tab-panel" id="tab-reference">
+                <div class="panel-header-simple">
+                    <h2>Incident Response & Best Practices Reference Sheet</h2>
+                    <p>Standard guidelines to verify links, manage headers, and report threats to secure the organization.</p>
+                </div>
+
+                <div class="reference-grid">
+                    <!-- Left: Top 10 Red Flags -->
+                    <div class="reference-card card">
+                        <h3>Top 10 Phishing Red Flags</h3>
+                        <ol class="flags-checklist">
+                            <li><strong>Suspicious Sender Domain</strong>: Look for subtle typos (e.g. paypa1-support.com).</li>
+                            <li><strong>Urgent / Threatening Tone</strong>: Demands instant action (e.g. Act within 24 hours).</li>
+                            <li><strong>Generic Salutations</strong>: Dear Customer instead of your name.</li>
+                            <li><strong>Mismatched Return-Path</strong>: From name does not align with routing headers.</li>
+                            <li><strong>Unexpected Attachments</strong>: ZIP files, ISOs, PDF or Office macros.</li>
+                            <li><strong>Obfuscated Hyperlinks</strong>: Button points to lookalike or shortened URL.</li>
+                            <li><strong>Financial Windfall Prizes</strong>: Wins and lottery windfalls you did not enter.</li>
+                            <li><strong>SSO Authentication Prompts</strong>: Alerts warning of SSO password expiry.</li>
+                            <li><strong>Executive Out-of-Band Wire Requests</strong>: CEO demanding confidentiality for wire transfers.</li>
+                            <li><strong>Poor Spelling and Grammar</strong>: Inconsistent styling, fonts, or grammatical structures.</li>
+                        </ol>
+                    </div>
+
+                    <!-- Right: DOs & DONTs -->
+                    <div class="reference-card card">
+                        <h3>Security Guidelines</h3>
+                        
+                        <div class="dos-box">
+                            <h4>DO:</h4>
+                            <ul>
+                                <li>Verify display name vs real email routing path in headers.</li>
+                                <li>Hover over links to verify destination domains.</li>
+                                <li>Enforce hardware FIDO2 passwordless Multi-Factor Authentication (MFA).</li>
+                                <li>Use the official corporate Phish Report button to report suspicious emails.</li>
+                                <li>Confirm wire requests through verbal phone call verification using directory numbers.</li>
+                            </ul>
+                        </div>
+
+                        <div class="donts-box">
+                            <h4>DON'T:</h4>
+                            <ul>
+                                <li>Click on links inside unverified emails.</li>
+                                <li>Download or unzip attachments from unverified sources.</li>
+                                <li>Input corporate login passwords on pages arrived at through emails.</li>
+                                <li>Forward phishing emails directly to coworkers without defanging domains first.</li>
+                                <li>Rely purely on SPF PASS headers to verify sender validity.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- JS Logic -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+Return-Path: <security-update-alert@paypa1-support.com>
+Received: from mail.paypa1-support.com (mail.paypa1-support.com [198.51.100.42])
+        by mx.corporate-mail-gateway.com with ESMTPS id p91si145892plh.112.2026.02.10.04.12.30
+        for <employee@target-corp.com>;
+        Tue, 10 Feb 2026 04:12:31 -0800 (PST)
+Received-SPF: pass (mx.corporate-mail-gateway.com: domain of security-update-alert@paypa1-support.com designates 198.51.100.42 as permitted sender) client-ip=198.51.100.42;
+Authentication-Results: mx.corporate-mail-gateway.com;
+       spf=pass (sender IP is 198.51.100.42) smtp.mailfrom=security-update-alert@paypa1-support.com;
+       dkim=pass header.i=@paypa1-support.com header.s=default header.b=P7fD2Gz8;
+       dmarc=pass (p=QUARANTINE sp=NONE dis=NONE) header.from=paypa1-support.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=paypa1-support.com; s=default;
+        h=from:to:subject:date:message-id:mime-version:content-type;
+        bh=9A/B4C5D6E7F8G9H0I1J2K3L4M5N6O7P8Q9R0S1T2U=;
+        b=P7fD2Gz8sH9iJ0kK1lM2nO3pQ4rS5tU6vW7xY8z9A0B1C2D3E4F5G6H7I8J9K0L1
+From: "PayPal Security Alert" <security-update-alert@paypa1-support.com>
+To: "Valued Customer" <employee@target-corp.com>
+Subject: URGENT: Your account has been temporarily suspended!
+Date: Tue, 10 Feb 2026 12:12:28 +0000
+Message-ID: <0100018a1a36-3a8e2b9c-4d5e-6f7a-8b9c-d0e1f2a3b4c5@paypa1-support.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; color: #333333; line-height: 1.6; }
+        .container { width: 100%; max-width: 600px; margin: 0 auto; border: 1px solid #eeeeee; border-radius: 4px; overflow: hidden; }
+        .header { background-color: #003087; padding: 20px; text-align: center; }
+        .header img { height: 35px; }
+        .content { padding: 30px; }
+        .alert-box { background-color: #fff3cd; border-left: 5px solid #ffc107; padding: 15px; margin-bottom: 20px; border-radius: 4px; }
+        .btn { display: inline-block; padding: 12px 24px; background-color: #0070ba; color: #ffffff !important; text-decoration: none; border-radius: 20px; font-weight: bold; margin: 20px 0; text-align: center; }
+        .footer { background-color: #f5f7fa; padding: 20px; text-align: center; font-size: 12px; color: #777777; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- PayPal Logo Spoof -->
+            <h2 style="color: #ffffff; margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-style: italic;">PayPaI</h2>
+        </div>
+        <div class="content">
+            <div class="alert-box">
+                <strong>Warning:</strong> Suspicious activity was detected on your account. To protect your funds, we have temporarily restricted account access.
+            </div>
+            
+            <p>Dear Customer,</p>
+            
+            <p>We recently noticed some transactions that seem unusual compared to your normal activity. As a security measure, we have suspended your account access until we can verify your identity and confirm these transactions were authorized by you.</p>
+            
+            <p><strong>What do I need to do?</strong></p>
+            <p>You must verify your billing details and update your security questions within <strong>24 hours</strong>. Failure to complete verification will result in permanent suspension of your account and forfeiture of any remaining funds.</p>
+            
+            <div style="text-align: center;">
+                <a href="https://paypa1-support.com/secure-login/login.php?ssl=true" class="btn">Verify My Account Now</a>
+            </div>
+            
+            <p>Thank you for helping us keep your account safe.</p>
+            <p>Sincerely,<br>PayPal Security Operations Team</p>
+        </div>
+        <div class="footer">
+            <p>Copyright © 2026 PayPal Inc. All rights reserved. PayPal is located at 2211 N. First St., San Jose, CA 95131.</p>
+            <p>Please do not reply to this automated email. Replies are routed to an unmonitored mailbox.</p>
+        </div>
+    </div>
+</body>
+</html>

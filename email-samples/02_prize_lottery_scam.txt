@@ -1,0 +1,70 @@
+Return-Path: <claims-dept@uk-national-jackpot-winner.net>
+Received: from mail.uk-national-jackpot-winner.net (mail.uk-national-jackpot-winner.net [203.0.113.88])
+        by mx.corporate-mail-gateway.com with ESMTPS id o18si854932pld.98.2026.02.10.05.34.12
+        for <employee@target-corp.com>;
+        Tue, 10 Feb 2026 05:34:15 -0800 (PST)
+Received-SPF: pass (mx.corporate-mail-gateway.com: domain of claims-dept@uk-national-jackpot-winner.net designates 203.0.113.88 as permitted sender) client-ip=203.0.113.88;
+Authentication-Results: mx.corporate-mail-gateway.com;
+       spf=pass (sender IP is 203.0.113.88) smtp.mailfrom=claims-dept@uk-national-jackpot-winner.net;
+       dkim=pass header.i=@uk-national-jackpot-winner.net header.s=default;
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=uk-national-jackpot-winner.net
+From: "The UK National Lottery" <claims-dept@uk-national-jackpot-winner.net>
+To: <undisclosed-recipients:;>
+Subject: CONGRATULATIONS!!! You Have Won £2,500,000 GBP! (Ref: UK/9482/2026)
+Date: Tue, 10 Feb 2026 13:34:10 +0000
+Message-ID: <LO-9482-2026-8874-Claims@uk-national-jackpot-winner.net>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="----=_NextPart_000_01C9_01C9AF8A.12A3B4C5"
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_01C9_01C9AF8A.12A3B4C5
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+THE UK NATIONAL LOTTERY DEPT
+Official Wins Notification Desk
+176-178 Gower St, London NW1 2AA, United Kingdom
+
+RE: OFFICIAL WINNINGS NOTIFICATION
+
+This is to inform you that you have been selected as a Category 'A' winner in our international lottery promotion program held on February 5, 2026. Your email address was selected at random from a database of over 10,000,000 corporate email addresses worldwide.
+
+You have been awarded a lump sum payout of £2,500,000 GBP (Two Million, Five Hundred Thousand British Pounds).
+
+To claim your prize, you must contact our claims administrator immediately with the following details:
+
+1. Full Name:
+2. Residential Address:
+3. Date of Birth:
+4. Country of Residence:
+5. Direct Telephone/Fax Number:
+6. Occupation/Job Title:
+7. Scan of Driver's License or Passport (for verification)
+
+Please refer to the attached document "Lottery_Winning_Certificate_2026.zip" for full details, Terms & Conditions, and to access your Winnings Claim Form.
+
+Contact Claims Agent:
+Mr. Donald Sterling (Claims Director)
+Email: claims-dept@uk-national-jackpot-winner.net
+Direct Phone: +44 7700 900077
+
+WARNING: Due to public safety and to prevent double claims, you are strictly advised to keep this winning notification confidential. Do not share this email or your winning details with anyone until your funds have been deposited in your bank account.
+
+Congratulations once again!
+
+Sincerely,
+Lady Beatrice Windsor
+Lottery Promotions Coordinator
+
+------=_NextPart_000_01C9_01C9AF8A.12A3B4C5
+Content-Type: application/zip; name="Lottery_Winning_Certificate_2026.zip"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Lottery_Winning_Certificate_2026.zip"
+
+UEsDBAoAAAAAAKeWZFUAAAAAAAAAAAAAAAAHAAAAZmFrZS50eHRUaGlzIGlzIGEgbW9jayBmaWxl
+IHRvIHNpbXVsYXRlIGEgbWFsaWNpb3VzIFpJUCBhdHRhY2htZW50LiBJbiBhIHJlYWwgYXR0YWNr
+LCB0aGlzIHdvdWxkIGNvbnRhaW4gYW4gZXhlY3V0YWJsZSwgU0NSLCBvciBMTksgZmlsZSBkZXNp
+Z25lZCB0byBkb3dubG9hZCBtYWx3YXJlLlBLAQIeAwoAAAAAAKeWZFUAAAAAAAAAAAAAAAAHAAAA
+AAAAAAAAAAAAAAABAAAAZmFrZS50eHRQSwUGAAAAAAEAAQA1AAAATwAAAAAA
+------=_NextPart_000_01C9_01C9AF8A.12A3B4C5--

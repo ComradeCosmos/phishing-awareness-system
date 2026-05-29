@@ -1,0 +1,85 @@
+Return-Path: <delivery-notification@dhl-tracking-alert.com>
+Received: from mail.dhl-tracking-alert.com (mail.dhl-tracking-alert.com [198.51.100.180])
+        by mx.corporate-mail-gateway.com with ESMTPS id z12si384910plk.14.2026.02.10.08.41.05
+        for <employee@target-corp.com>;
+        Tue, 10 Feb 2026 08:41:07 -0800 (PST)
+Received-SPF: pass (mx.corporate-mail-gateway.com: domain of delivery-notification@dhl-tracking-alert.com designates 198.51.100.180 as permitted sender) client-ip=198.51.100.180;
+Authentication-Results: mx.corporate-mail-gateway.com;
+       spf=pass (sender IP is 198.51.100.180) smtp.mailfrom=delivery-notification@dhl-tracking-alert.com;
+       dkim=pass header.i=@dhl-tracking-alert.com header.s=dhlkey;
+       dmarc=pass (p=QUARANTINE sp=NONE dis=NONE) header.from=dhl-tracking-alert.com
+From: "DHL Express Delivery" <delivery-notification@dhl-tracking-alert.com>
+To: "Recipient" <employee@target-corp.com>
+Subject: Delivery Failed: Important parcel delivery outstanding - Action required!
+Date: Tue, 10 Feb 2026 16:41:00 +0000
+Message-ID: <DHL-TRACK-99420-EXP-2026@dhl-tracking-alert.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #333333; line-height: 1.4; }
+        .container { width: 100%; max-width: 600px; margin: 0 auto; border: 1px solid #ffcc00; }
+        .header { background-color: #d40511; padding: 15px; border-bottom: 5px solid #ffcc00; }
+        .header h1 { color: #ffcc00; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin: 0; font-size: 32px; letter-spacing: 1px; }
+        .content { padding: 30px; }
+        .shipment-details { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        .shipment-details th, .shipment-details td { border: 1px solid #dddddd; padding: 10px; text-align: left; }
+        .shipment-details th { background-color: #f5f5f5; width: 35%; }
+        .btn { display: inline-block; padding: 12px 24px; background-color: #d40511; color: #ffffff !important; text-decoration: none; border-radius: 4px; font-weight: bold; margin: 15px 0; text-align: center; }
+        .footer { background-color: #f5f5f5; padding: 20px; text-align: center; font-size: 11px; color: #666666; border-top: 1px solid #eeeeee; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- Spoofed DHL Header -->
+            <h1>DHL EXPRESS</h1>
+        </div>
+        <div class="content">
+            <h3 style="color: #d40511; margin-top: 0;">Your Package Could Not Be Delivered!</h3>
+            
+            <p>Dear Customer,</p>
+            
+            <p>Our courier attempted delivery of your registered international shipment on <strong>February 10, 2026, at 11:24 AM</strong>. However, the delivery attempt failed due to an incomplete street address or missing apartment/suite number in our records.</p>
+            
+            <table class="shipment-details">
+                <tr>
+                    <th>Waybill/Tracking No.</th>
+                    <td><strong>#DHL-93849-DE</strong></td>
+                </tr>
+                <tr>
+                    <th>Sender</th>
+                    <td>GLOBAL PARTS GMBH, Germany</td>
+                </tr>
+                <tr>
+                    <th>Status</th>
+                    <td>Returned to Local Distribution Center</td>
+                </tr>
+                <tr>
+                    <th>Outstanding Fee</th>
+                    <td>$1.50 USD (Redelivery Administration Fee)</td>
+                </tr>
+            </table>
+            
+            <p><strong>Action Required:</strong></p>
+            <p>To update your delivery address and schedule an immediate redelivery dispatch, you must pay the outstanding $1.50 USD processing fee online. If this fee is not settled and address confirmed within <strong>48 hours</strong>, the package will be returned to the sender in Germany at a cost to your organization.</p>
+            
+            <div style="text-align: left;">
+                <a href="https://dhl-tracking-alert.com/tracking/dispatch/reschedule.html?tracking_no=DHL-93849-DE" class="btn">Update Address & Reschedule Delivery</a>
+            </div>
+            
+            <p>We apologize for the inconvenience and appreciate your immediate cooperation.</p>
+            
+            <p>Warm regards,<br>
+            <strong>DHL Customer Support Dispatch</strong></p>
+        </div>
+        <div class="footer">
+            <p>DHL International GmbH. All rights reserved. Registered office: Bonn, Germany. WEEE-Reg.-No. DE 12345678.</p>
+            <p>This is an automated notification. Responses sent to this email address cannot be processed.</p>
+        </div>
+    </div>
+</body>
+</html>

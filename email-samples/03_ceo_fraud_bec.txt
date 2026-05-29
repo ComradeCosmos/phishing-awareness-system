@@ -1,0 +1,37 @@
+Return-Path: <ceo.targetcorp@gmail.com>
+Received: from mail-sourcemail.google.com (mail-sourcemail.google.com [209.85.220.41])
+        by mx.corporate-mail-gateway.com with ESMTPS id c45si942941plh.12.2026.02.10.06.15.22
+        for <cfo@target-corp.com>;
+        Tue, 10 Feb 2026 06:15:24 -0800 (PST)
+Received-SPF: pass (mx.corporate-mail-gateway.com: domain of ceo.targetcorp@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.corporate-mail-gateway.com;
+       spf=pass (sender IP is 209.85.220.41) smtp.mailfrom=ceo.targetcorp@gmail.com;
+       dkim=pass header.i=@gmail.com header.s=20230601;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+From: "Robert Vance" <ceo.targetcorp@gmail.com>
+To: "Sarah Jenkins" <cfo@target-corp.com>
+Subject: CONFIDENTIAL: Urgent Wire Transfer Request - Project Aurora
+Date: Tue, 10 Feb 2026 14:15:20 +0000
+Message-ID: <CAF=2J_vJ=gXz8a7F-y5Z=H6nO+M-O8d9w_Q@mail.gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+Hi Sarah,
+
+Are you at your desk? I am currently in a highly confidential board meeting regarding our upcoming corporate acquisition (Project Aurora). I cannot take any phone calls right now, so please respond via this email address.
+
+We need to close a standard deposit payment of $45,000 USD to our legal team immediately to prevent delays in the transaction. I need you to initiate a wire transfer manually today.
+
+Please send me the wire transfer form and current routing details. I will provide the recipient's bank routing and account information as soon as you confirm you are ready to process it.
+
+This acquisition is highly sensitive, so please keep this matter completely confidential. Do not discuss it with anyone else in the office or loop in other team members for the time being.
+
+I'm counting on you to get this done quickly before the bank closes. Let me know when you have initiated the transfer.
+
+Regards,
+
+Robert Vance
+Chief Executive Officer
+Target Corp.
+Sent from my iPad

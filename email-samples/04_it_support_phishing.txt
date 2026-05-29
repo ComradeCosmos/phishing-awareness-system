@@ -1,0 +1,62 @@
+Return-Path: <helpdesk@targetcorp-it-support.net>
+Received: from mail.targetcorp-it-support.net (mail.targetcorp-it-support.net [192.0.2.105])
+        by mx.corporate-mail-gateway.com with ESMTPS id x42si284920plg.77.2026.02.10.07.22.18
+        for <employee@target-corp.com>;
+        Tue, 10 Feb 2026 07:22:20 -0800 (PST)
+Received-SPF: pass (mx.corporate-mail-gateway.com: domain of helpdesk@targetcorp-it-support.net designates 192.0.2.105 as permitted sender) client-ip=192.0.2.105;
+Authentication-Results: mx.corporate-mail-gateway.com;
+       spf=pass (sender IP is 192.0.2.105) smtp.mailfrom=helpdesk@targetcorp-it-support.net;
+       dkim=pass header.i=@targetcorp-it-support.net header.s=itkey;
+       dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=targetcorp-it-support.net
+From: "Target Corp IT Helpdesk" <helpdesk@targetcorp-it-support.net>
+To: "Target Corp Employee" <employee@target-corp.com>
+Subject: Action Required: Your Single Sign-On (SSO) Password Expires in 24 Hours!
+Date: Tue, 10 Feb 2026 15:22:15 +0000
+Message-ID: <SSO-RESET-93820-2026-IT@targetcorp-it-support.net>
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333333; line-height: 1.5; }
+        .container { width: 100%; max-width: 550px; margin: 0 auto; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .header { background-color: #0078d4; color: #ffffff; padding: 25px; font-weight: 600; font-size: 18px; }
+        .content { padding: 25px; }
+        .warning-text { color: #d83b01; font-weight: bold; }
+        .btn { display: inline-block; padding: 10px 20px; background-color: #0078d4; color: #ffffff !important; text-decoration: none; font-weight: 600; border-radius: 2px; margin: 20px 0; }
+        .footer { background-color: #f3f2f1; padding: 15px; text-align: center; font-size: 11px; color: #605e5c; border-top: 1px solid #f3f2f1; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Microsoft Office 365 - Single Sign-On Security Update
+        </div>
+        <div class="content">
+            <p>Dear Corporate User,</p>
+            
+            <p>Your corporate Active Directory / Single Sign-On (SSO) network password is scheduled to expire in <span class="warning-text">24 hours</span> as part of our quarterly network security update.</p>
+            
+            <p>To avoid any disruption to your work email, Teams, OneDrive, and corporate network share portals, you must log in immediately and confirm your current password credentials to authorize the extension.</p>
+            
+            <p>If you do not complete this verification before the deadline, your account will be locked out and you will be unable to access corporate systems until you physically bring your work laptop to the IT office for a manual recovery.</p>
+            
+            <div style="text-align: left;">
+                <a href="https://targetcorp-it-support.net/portal/sso-login/verify.html?user=employee@target-corp.com" class="btn">Keep My Current Password</a>
+            </div>
+            
+            <p>Please note that the IT department will never ask for your password via telephone. Always verify your logins through the secure portal.</p>
+            
+            <p>Best regards,</p>
+            <p><strong>Target Corp IT Infrastructure Support</strong><br>
+            Helpdesk Ticket ID: #AD-830219-EXP</p>
+        </div>
+        <div class="footer">
+            <p>This message was sent from an automated notification system of Target Corp IT. Please do not reply directly.</p>
+            <p>© 2026 Microsoft Corporation. All rights reserved. Microsoft and Office 365 are registered trademarks.</p>
+        </div>
+    </div>
+</body>
+</html>
