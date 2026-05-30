@@ -238,11 +238,6 @@ This phishing awareness system was completed as part of:
 - **Focus:** Security education and user awareness
 - **Approach:** Real-world practical application
 
-## Author
-
-**Future Interns Cybersecurity Analyst**
-- Portfolio: [Your Website]
-
 ## Additional Resources
 
 ### Training & Education:
@@ -263,11 +258,5 @@ This phishing awareness system was completed as part of:
 ## License
 
 This project is for educational purposes only. All phishing samples are from public sources or realistic recreations for training purposes.
-
-## Acknowledgments
-
-- OWASP for security education resources
-- Public phishing research repositories
-- Security community for threat intelligence
 
 ---
